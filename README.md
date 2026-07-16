@@ -38,6 +38,7 @@ Useful flags:
 
 | Skill | Description |
 |-------|-------------|
+| [`draft-mode`](./skills/draft-mode/SKILL.md) | Fast iteration: no git/build/test/lint/browser verification after edits unless explicitly asked (one-time only) |
 | [`whoami`](./skills/whoami/SKILL.md) | Runs `whoami` and returns only the username |
 
 ## Layout
