@@ -6,20 +6,6 @@ Install any skill from this repo with [`npx skills`](https://github.com/vercel-l
 
 ## Install
 
-Install all skills:
-
-```bash
-npx skills add jackcannon/skills
-```
-
-Install a specific skill:
-
-```bash
-npx skills add jackcannon/skills --skill whoami
-```
-
-Install globally (available across projects):
-
 ```bash
 npx skills add jackcannon/skills -g
 ```
@@ -43,7 +29,6 @@ Useful flags:
 | [`draft-mode`](./skills/draft-mode/SKILL.md) | Fast iteration — no automatic git, builds, tests, lints, or browser checks after edits. Use for "draft mode" or "/draft-mode". |
 | [`read-summaries`](./skills/read-summaries/SKILL.md) | Read prior chat summaries from the `summarise` skill. Use when past session context or handovers would help. |
 | [`summarise`](./skills/summarise/SKILL.md) | Write a durable chat summary for continuity and reusable findings. Use for "summarise", "handover", "handoff", or /summarise. |
-| [`whoami`](./skills/whoami/SKILL.md) | Run `whoami` and return the username. Use for /whoami or "whoami". |
 
 ## Layout
 
