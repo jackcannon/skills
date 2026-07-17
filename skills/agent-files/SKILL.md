@@ -1,10 +1,8 @@
 ---
 name: agent-files
 description: >-
-  Use repository `.agent-files` for agent-created files that should be kept
-  locally but not git-tracked (chat summaries, informal specs, reports, notes).
-  Use whenever saving durable agent output that must persist across sessions
-  without being committed.
+  Keep durable agent output in repo `.agent-files` (untracked). Use when
+  saving summaries, specs, reports, or notes across sessions.
 ---
 
 # agent-files

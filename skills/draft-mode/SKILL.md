@@ -1,11 +1,8 @@
 ---
 name: draft-mode
 description: >-
-  Fast iteration mode: after code changes, do not commit, run git, builds,
-  tests, lints, typechecks, dev servers, or browser verification unless the
-  user explicitly asks in that message. Use when the user says "draft mode",
-  "draft-mode", "/draft-mode", or wants to iterate quickly without automatic
-  verification after every edit.
+  Fast iteration — no automatic git, builds, tests, lints, or browser checks
+  after edits. Use for "draft mode" or "/draft-mode".
 ---
 
 # draft-mode

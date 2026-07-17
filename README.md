@@ -38,10 +38,12 @@ Useful flags:
 
 | Skill | Description |
 |-------|-------------|
-| [`agent-files`](./skills/agent-files/SKILL.md) | Use repo `.agent-files` for kept, untracked agent output (summaries, specs, reports); ensure git-ignored; do not delete after use |
-| [`agent-tmp`](./skills/agent-tmp/SKILL.md) | Use repo `.agent-tmp` for temp files (not `/tmp`, `$TMPDIR`, etc.); ensure git-ignored; clean up only files you created |
-| [`draft-mode`](./skills/draft-mode/SKILL.md) | Fast iteration: no git/build/test/lint/browser verification after edits unless explicitly asked (one-time only) |
-| [`whoami`](./skills/whoami/SKILL.md) | Runs `whoami` and returns only the username |
+| [`agent-files`](./skills/agent-files/SKILL.md) | Keep durable agent output in repo `.agent-files` (untracked). Use when saving summaries, specs, reports, or notes across sessions. |
+| [`agent-tmp`](./skills/agent-tmp/SKILL.md) | Put temp/scratch files in repo `.agent-tmp`, not OS temp dirs. Use when creating disposable working files. |
+| [`draft-mode`](./skills/draft-mode/SKILL.md) | Fast iteration — no automatic git, builds, tests, lints, or browser checks after edits. Use for "draft mode" or "/draft-mode". |
+| [`read-summaries`](./skills/read-summaries/SKILL.md) | Read prior chat summaries from the `summarise` skill. Use when past session context or handovers would help. |
+| [`summarise`](./skills/summarise/SKILL.md) | Write a durable chat summary for continuity and reusable findings. Use for "summarise", "handover", "handoff", or /summarise. |
+| [`whoami`](./skills/whoami/SKILL.md) | Run `whoami` and return the username. Use for /whoami or "whoami". |
 
 ## Layout
 

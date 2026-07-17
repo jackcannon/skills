@@ -1,10 +1,8 @@
 ---
 name: agent-tmp
 description: >-
-  Use repository `.agent-tmp` for temporary files instead of OS temp dirs
-  (`/tmp`, `/var/tmp`, `$TMPDIR`, `/var/folders`, `~/tmp`) or paths outside
-  the repo. Use whenever creating, reading, editing, or cleaning up temporary
-  files, scratch output, or disposable working files.
+  Put temp/scratch files in repo `.agent-tmp`, not OS temp dirs. Use when
+  creating disposable working files.
 ---
 
 # agent-tmp
