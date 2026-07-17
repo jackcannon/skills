@@ -38,6 +38,8 @@ Useful flags:
 
 | Skill | Description |
 |-------|-------------|
+| [`agent-files`](./skills/agent-files/SKILL.md) | Use repo `.agent-files` for kept, untracked agent output (summaries, specs, reports); ensure git-ignored; do not delete after use |
+| [`agent-tmp`](./skills/agent-tmp/SKILL.md) | Use repo `.agent-tmp` for temp files (not `/tmp`, `$TMPDIR`, etc.); ensure git-ignored; clean up only files you created |
 | [`draft-mode`](./skills/draft-mode/SKILL.md) | Fast iteration: no git/build/test/lint/browser verification after edits unless explicitly asked (one-time only) |
 | [`whoami`](./skills/whoami/SKILL.md) | Runs `whoami` and returns only the username |
 
