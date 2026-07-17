@@ -26,6 +26,7 @@ Useful flags:
 |-------|-------------|
 | [`agent-files`](./skills/agent-files/SKILL.md) | Keep durable agent output in repo `.agent-files` (untracked). Use when saving summaries, specs, reports, or notes across sessions. |
 | [`agent-tmp`](./skills/agent-tmp/SKILL.md) | Put temp/scratch files in repo `.agent-tmp`, not OS temp dirs. Use when creating disposable working files. |
+| [`backup-branch`](./skills/backup-branch/SKILL.md) | Backup the current git branch for reference, or for safe-keeping before a risky git operation. Use for "backup branch", "list backups", "restore backup", or /backup-branch. |
 | [`draft-mode`](./skills/draft-mode/SKILL.md) | Fast iteration — no automatic git, builds, tests, lints, or browser checks after edits. Use for "draft mode" or "/draft-mode". |
 | [`read-summaries`](./skills/read-summaries/SKILL.md) | Read prior chat summaries from the `summarise` skill. Use when past session context or handovers would help. |
 | [`summarise`](./skills/summarise/SKILL.md) | Write a durable chat summary for continuity and reusable findings. Use for "summarise", "handover", "handoff", or /summarise. |
