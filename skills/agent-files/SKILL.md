@@ -28,10 +28,16 @@ description: >-
 Every time before creating or using files in `.agent-files`, run:
 
 ```bash
-root=$(git rev-parse --show-toplevel) && mkdir -p "$root/.agent-files" && (git -C "$root" check-ignore -q .agent-files || grep -qxF '.agent-files' "$root/.git/info/exclude" 2>/dev/null || echo '.agent-files' >> "$root/.git/info/exclude")
+cd "$(git rev-parse --show-toplevel)" && mkdir -p .agent-files && git check-ignore -q .agent-files || { echo "agent-files: .agent-files is not git-ignored; run the exclude follow-up command"; exit 1; }
 ```
 
-This creates `.agent-files` at the repo root (regardless of shell `pwd`) and ensures it is git-ignored. Prefer adding `.agent-files` to the project `.gitignore` when you can (shared; avoids writing under `.git/`). The command falls back to `.git/info/exclude` only if the path is not already ignored.
+If that exits non-zero, run this follow-up once (may need VS Code approval; writes `.git/info/exclude`):
+
+```bash
+grep -qxF '.agent-files' .git/info/exclude || echo '.agent-files' >> .git/info/exclude
+```
+
+Prefer project `.gitignore` only if the user asks to make the ignore shared/tracked. Do not use `/dev/null` redirects.
 
 ## Persistence
 

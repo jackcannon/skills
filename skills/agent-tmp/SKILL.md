@@ -18,10 +18,16 @@ description: >-
 Every time before creating or using files in `.agent-tmp`, run:
 
 ```bash
-root=$(git rev-parse --show-toplevel) && mkdir -p "$root/.agent-tmp" && (git -C "$root" check-ignore -q .agent-tmp || grep -qxF '.agent-tmp' "$root/.git/info/exclude" 2>/dev/null || echo '.agent-tmp' >> "$root/.git/info/exclude")
+cd "$(git rev-parse --show-toplevel)" && mkdir -p .agent-tmp && git check-ignore -q .agent-tmp || { echo "agent-tmp: .agent-tmp is not git-ignored; run the exclude follow-up command"; exit 1; }
 ```
 
-This creates `.agent-tmp` at the repo root (regardless of shell `pwd`) and ensures it is git-ignored. Prefer adding `.agent-tmp` to the project `.gitignore` when you can (shared; avoids writing under `.git/`). The command falls back to `.git/info/exclude` only if the path is not already ignored.
+If that exits non-zero, run this follow-up once (may need VS Code approval; writes `.git/info/exclude`):
+
+```bash
+grep -qxF '.agent-tmp' .git/info/exclude || echo '.agent-tmp' >> .git/info/exclude
+```
+
+Prefer project `.gitignore` only if the user asks to make the ignore shared/tracked. Do not use `/dev/null` redirects.
 
 ## Cleanup
 
