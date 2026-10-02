@@ -7,7 +7,7 @@ description: >-
 
 # auto-rename-chat
 
-Apply the naming formats below via the **host’s rename mechanism** (e.g. Cursor `rename_chat`, Claude Code `/rename [name]`, Copilot/VS Code `/rename [title]`, or whatever equivalent the current tool exposes). If none is available, skip silently — do not ask the user to rename.
+Apply the naming formats below via the **host’s rename mechanism** (e.g. Cursor `rename_chat`, Claude Code `mcp__rename-chat__rename_chat` from the [`rename-chat`](https://github.com/jackcannon/skills/tree/master/plugins/rename-chat) plugin (load it with ToolSearch if it is deferred), Copilot/VS Code `/rename [title]`, or whatever equivalent the current tool exposes). If none is available, skip silently — do not ask the user to rename.
 
 ## Formats (pick the best that fits)
 

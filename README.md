@@ -39,6 +39,7 @@ Plugins are not skills, and `npx skills` does not install them. See each plugin'
 | Plugin | Description |
 |--------|-------------|
 | [`repo-agents`](./plugins/repo-agents/README.md) | Claude Code plugin. Loads a repository's `.agents/rules` and `.agents/skills`, the same as `.claude/rules` and `.claude/skills`. |
+| [`rename-chat`](./plugins/rename-chat/README.md) | Claude Code plugin. Gives the agent a tool to rename the chat, which the `auto-rename-chat` skill uses. |
 
 ## Layout
 

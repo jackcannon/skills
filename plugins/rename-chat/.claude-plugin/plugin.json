@@ -1,0 +1,7 @@
+{
+  "name": "rename-chat",
+  "version": "0.1.0",
+  "description": "Gives the Claude Code agent a tool to rename the chat, so it does not have to ask the person to run /rename.",
+  "author": { "name": "Jack Cannon" },
+  "repository": "https://github.com/jackcannon/skills"
+}
