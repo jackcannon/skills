@@ -32,6 +32,14 @@ Useful flags:
 | [`read-summaries`](./skills/read-summaries/SKILL.md) | Read prior chat summaries from the `summarise` skill. Use when past session context or handovers would help. |
 | [`summarise`](./skills/summarise/SKILL.md) | Write a durable chat summary for continuity and reusable findings. Use for "summarise", "handover", "handoff", or /summarise. |
 
+## Plugins
+
+Plugins are not skills, and `npx skills` does not install them. See each plugin's README.
+
+| Plugin | Description |
+|--------|-------------|
+| [`repo-agents`](./plugins/repo-agents/README.md) | Claude Code plugin. Loads a repository's `.agents/rules` and `.agents/skills`, the same as `.claude/rules` and `.claude/skills`. |
+
 ## Layout
 
 ```text

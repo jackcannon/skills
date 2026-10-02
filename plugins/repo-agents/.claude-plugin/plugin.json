@@ -1,0 +1,7 @@
+{
+  "name": "repo-agents",
+  "version": "0.1.0",
+  "description": "Loads a repository's .agents/rules and .agents/skills in Claude Code, the same as .claude/rules and .claude/skills.",
+  "author": { "name": "Jack Cannon" },
+  "repository": "https://github.com/jackcannon/skills"
+}
